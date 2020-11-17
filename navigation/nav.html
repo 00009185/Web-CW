@@ -1,0 +1,73 @@
+<div class="navigation_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Apartments</a>
+            <div class="dropdown_nav">
+                <ul>
+                    <li><a href="mirabod_avanue.html">Mirabod Avenue</a></li>
+                    <li><a href="premier_house.html">Premier House</a></li>
+                    <li><a href="#">JK New Life</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contatcs</a></li>
+        </ul>
+    </div>
+    
+    <style>
+    .navigation_bar {
+    background: rgb(245, 181, 43);
+    text-align: center;
+  }
+  .navigation_bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: ivory;
+  }
+  .navigation_bar ul li {
+    width: 120px;
+    padding: 15px;
+    margin: 15px;
+
+  }
+  .navigation_bar ul li a {
+    text-decoration: none;
+    color: ivory;
+  }
+  .active, .navigation_bar ul li:hover{
+    background: rgb(168, 115, 17);
+    border-radius: 4px;
+  }
+  .dropdown_nav {
+    display: none;
+  }
+  .navigation_bar ul li:hover .dropdown_nav {
+    display: block;
+    position: absolute;
+    background: rgb(187, 121, 21);
+    margin-top: 15px;
+    margin-left: -15px;
+  }
+  .navigation_bar ul li:hover .dropdown_nav ul {
+    display: block;
+    margin: 10px;
+  }
+  .navigation_bar ul li:hover .dropdown_nav ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  .navigation_bar ul li:hover .dropdown_nav ul li:last-child{
+    border-bottom: none;
+  }
+  .navigation_bar ul li:hover .dropdown_nav ul li a:hover{
+    color: rgb(206, 168, 97);
+  }
+
+    </style>
